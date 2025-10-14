@@ -1,0 +1,68 @@
+@charset "UTF-8";
+:root{
+    --bage: #E6E0D6;
+    --marrom-escuro: #816D4F;
+    --marrom-claro: #B29463;
+}
+
+body{
+    font-family: 'Barlow';
+    height: 4000px;
+}
+
+input[type=checkbox]{
+    box-shadow: none;
+    border: 2px solid var(--marrom-claro);
+}
+
+input[type=checkbox]:checked, input[type=checkbox]:focus{
+    background-color: var(--marrom-claro);
+    border-color: var(--marrom-claro);
+    box-shadow: none;
+    outline: none;
+}
+
+.banner-1{
+    background-image: url(img/banner-1.png);
+}
+
+.banner-2{
+    background-image: url(img/banner-2.png);
+}
+
+.banner-3{
+    background-image: url(img/banner-3.png);
+}
+
+.banners{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banners-titulo{
+    --bs-bg-opacity: .2;
+}
+
+.btn-marrom{
+    background-color: var(--marrom-claro);
+}
+
+.btn-marrom:hover{
+    background-color: var(--marrom-escuro);
+}
+
+.input-range::-webkit-slider-thumb{
+    background-color: var(--marrom-claro);
+}
+
+footer{
+    background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] .nav-link, .accordion, .offcanvas-title, .accordion-body {
+    color: #FFFFFF;
+}
